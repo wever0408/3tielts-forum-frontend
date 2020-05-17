@@ -33,12 +33,12 @@ class Home extends Component {
                   {/* Logo icon */}
                   <b>
                     <img
-                      src="./assets/images/logo-icon.png"
+                      src="images/logo-icon.png"
                       alt="homepage"
                       className="dark-logo"
                     />
                     <img
-                      src="../assets/images/logo-light-icon.png"
+                      src="images/logo-light-icon.png"
                       alt="homepage"
                       className="light-logo"
                     />
@@ -196,7 +196,7 @@ class Home extends Component {
                               <div className="user-img">
                                 {" "}
                                 <img
-                                  src="../../assets/images/users/1.jpg"
+                                  src="images/users/1.jpg"
                                   alt="user"
                                   className="img-circle"
                                 />{" "}
@@ -214,7 +214,7 @@ class Home extends Component {
                               <div className="user-img">
                                 {" "}
                                 <img
-                                  src="../../assets/images/users/2.jpg"
+                                  src="images/users/2.jpg"
                                   alt="user"
                                   className="img-circle"
                                 />{" "}
@@ -250,7 +250,7 @@ class Home extends Component {
                               <div className="user-img">
                                 {" "}
                                 <img
-                                  src="../../assets/images/users/4.jpg"
+                                  src="images/users/4.jpg"
                                   alt="user"
                                   className="img-circle"
                                 />{" "}
@@ -305,7 +305,7 @@ class Home extends Component {
                                   {" "}
                                   <img
                                     className="d-block img-fluid"
-                                    src="../../assets/images/big/img1.jpg"
+                                    src="images/big/img1.jpg"
                                     alt="First slide"
                                   />
                                 </div>
@@ -314,7 +314,7 @@ class Home extends Component {
                                 <div className="container">
                                   <img
                                     className="d-block img-fluid"
-                                    src="../../assets/images/big/img2.jpg"
+                                    src="images/big/img2.jpg"
                                     alt="Second slide"
                                   />
                                 </div>
@@ -323,7 +323,7 @@ class Home extends Component {
                                 <div className="container">
                                   <img
                                     className="d-block img-fluid"
-                                    src="../../assets/images/big/img3.jpg"
+                                    src="images/big/img3.jpg"
                                     alt="Third slide"
                                   />
                                 </div>
@@ -531,7 +531,7 @@ class Home extends Component {
                       aria-expanded="false"
                     >
                       <img
-                        src="../../assets/images/users/1.jpg"
+                        src="images/users/1.jpg"
                         alt="user"
                         className
                       />{" "}
@@ -586,7 +586,7 @@ class Home extends Component {
                       aria-expanded="false"
                     >
                       <img
-                        src="../../assets/images/users/1.jpg"
+                        src="images/users/1.jpg"
                         alt="user-img"
                         className="img-circle"
                       />
@@ -1055,7 +1055,7 @@ class Home extends Component {
                       <li>
                         <a href="javascript:void(0)">
                           <img
-                            src="../../assets/images/users/1.jpg"
+                            src="images/users/1.jpg"
                             alt="user-img"
                             className="img-circle"
                           />{" "}
@@ -1068,7 +1068,7 @@ class Home extends Component {
                       <li>
                         <a href="javascript:void(0)">
                           <img
-                            src="../../assets/images/users/2.jpg"
+                            src="images/users/2.jpg"
                             alt="user-img"
                             className="img-circle"
                           />{" "}
@@ -1081,7 +1081,7 @@ class Home extends Component {
                       <li>
                         <a href="javascript:void(0)">
                           <img
-                            src="../../assets/images/users/3.jpg"
+                            src="images/users/3.jpg"
                             alt="user-img"
                             className="img-circle"
                           />{" "}
@@ -1094,7 +1094,7 @@ class Home extends Component {
                       <li>
                         <a href="javascript:void(0)">
                           <img
-                            src="../../assets/images/users/4.jpg"
+                            src="images/users/4.jpg"
                             alt="user-img"
                             className="img-circle"
                           />{" "}
@@ -1107,7 +1107,7 @@ class Home extends Component {
                       <li>
                         <a href="javascript:void(0)">
                           <img
-                            src="../../assets/images/users/5.jpg"
+                            src="images/users/5.jpg"
                             alt="user-img"
                             className="img-circle"
                           />{" "}
@@ -1120,7 +1120,7 @@ class Home extends Component {
                       <li>
                         <a href="javascript:void(0)">
                           <img
-                            src="../../assets/images/users/6.jpg"
+                            src="images/users/6.jpg"
                             alt="user-img"
                             className="img-circle"
                           />{" "}
@@ -1133,7 +1133,7 @@ class Home extends Component {
                       <li>
                         <a href="javascript:void(0)">
                           <img
-                            src="../../assets/images/users/7.jpg"
+                            src="images/users/7.jpg"
                             alt="user-img"
                             className="img-circle"
                           />{" "}
@@ -1146,7 +1146,7 @@ class Home extends Component {
                       <li>
                         <a href="javascript:void(0)">
                           <img
-                            src="../../assets/images/users/8.jpg"
+                            src="images/users/8.jpg"
                             alt="user-img"
                             className="img-circle"
                           />{" "}
