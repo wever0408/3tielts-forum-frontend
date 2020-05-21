@@ -130,7 +130,7 @@ class Header extends Component {
                     {" "}
                     <a
                       className="nav-link nav-toggler d-block d-md-none waves-effect waves-dark"
-                      href="javascript:void(0)"
+                     
                     >
                       <i className="ti-menu" />
                     </a>{" "}
@@ -139,7 +139,7 @@ class Header extends Component {
                     {" "}
                     <a
                       className="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark"
-                      href="javascript:void(0)"
+                     
                     >
                       <i className="icon-menu" />
                     </a>{" "}
@@ -177,7 +177,7 @@ class Header extends Component {
                         </li>
                         <li>
                           <div className="message-center">
-                            <a href="javascript:void(0)">
+                            <a>
                               <div className="btn btn-danger btn-circle">
                                 <i className="fa fa-link" />
                               </div>
@@ -189,7 +189,7 @@ class Header extends Component {
                                 <span className="time">9:30 AM</span>
                               </div>
                             </a>
-                            <a href="javascript:void(0)">
+                            <a>
                               <div className="btn btn-success btn-circle">
                                 <i className="ti-calendar" />
                               </div>
@@ -201,7 +201,7 @@ class Header extends Component {
                                 <span className="time">9:10 AM</span>
                               </div>
                             </a>
-                            <a href="javascript:void(0)">
+                            <a>
                               <div className="btn btn-info btn-circle">
                                 <i className="ti-settings" />
                               </div>
@@ -213,7 +213,7 @@ class Header extends Component {
                                 <span className="time">9:08 AM</span>
                               </div>
                             </a>
-                            <a href="javascript:void(0)">
+                            <a>
                               <div className="btn btn-primary btn-circle">
                                 <i className="ti-user" />
                               </div>
@@ -268,7 +268,7 @@ class Header extends Component {
                         </li>
                         <li>
                           <div className="message-center">
-                            <a href="javascript:void(0)">
+                            <a>
                               <div className="user-img">
                                 {" "}
                                 <img
@@ -286,7 +286,7 @@ class Header extends Component {
                                 <span className="time">9:30 AM</span>
                               </div>
                             </a>
-                            <a href="javascript:void(0)">
+                            <a>
                               <div className="user-img">
                                 {" "}
                                 <img
@@ -304,7 +304,7 @@ class Header extends Component {
                                 <span className="time">9:10 AM</span>
                               </div>
                             </a>
-                            <a href="javascript:void(0)">
+                            <a>
                               <div className="user-img">
                                 {" "}
                                 <img
@@ -322,7 +322,7 @@ class Header extends Component {
                                 <span className="time">9:08 AM</span>
                               </div>
                             </a>
-                            <a href="javascript:void(0)">
+                            <a>
                               <div className="user-img">
                                 {" "}
                                 <img
@@ -564,31 +564,31 @@ class Header extends Component {
                           <h4 className="m-b-20">List style</h4>
                           <ul className="list-style-none">
                             <li>
-                              <a href="javascript:void(0)">
+                              <a>
                                 <i className="fa fa-check text-success" />
                                 You can give link
                               </a>
                             </li>
                             <li>
-                              <a href="javascript:void(0)">
+                              <a>
                                 <i className="fa fa-check text-success" />
                                 Give link
                               </a>
                             </li>
                             <li>
-                              <a href="javascript:void(0)">
+                              <a>
                                 <i className="fa fa-check text-success" />
                                 Another Give link
                               </a>
                             </li>
                             <li>
-                              <a href="javascript:void(0)">
+                              <a>
                                 <i className="fa fa-check text-success" />
                                 Forth link
                               </a>
                             </li>
                             <li>
-                              <a href="javascript:void(0)">
+                              <a>
                                 <i className="fa fa-check text-success" />
                                 Another fifth link
                               </a>
@@ -617,17 +617,17 @@ class Header extends Component {
                       </span>{" "}
                     </a>
                     <div className="dropdown-menu dropdown-menu-right animated flipInY">
-                      <a href="javascript:void(0)" className="dropdown-item">
+                      <a className="dropdown-item">
                         <i className="ti-user" /> My Profile
                       </a>
-                      <a href="javascript:void(0)" className="dropdown-item">
+                      <a className="dropdown-item">
                         <i className="ti-wallet" /> My Balance
                       </a>
-                      <a href="javascript:void(0)" className="dropdown-item">
+                      <a className="dropdown-item">
                         <i className="ti-email" /> Inbox
                       </a>
                       <div className="dropdown-divider" />
-                      <a href="javascript:void(0)" className="dropdown-item">
+                      <a className="dropdown-item">
                         <i className="ti-settings" /> Account Setting
                       </a>
                       <div className="dropdown-divider" />
@@ -641,7 +641,7 @@ class Header extends Component {
                     {" "}
                     <a
                       className="nav-link  waves-effect waves-light"
-                      href="javascript:void(0)"
+                     
                     >
                       <i className="ti-settings" />
                     </a>

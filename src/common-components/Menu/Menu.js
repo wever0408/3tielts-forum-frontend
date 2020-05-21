@@ -10,21 +10,46 @@ import {
 
 import "./Menu.scss";
 
+const menus = [
+  {
+    name: "Home",
+    to: "/",
+    exact: true,
+  },
+  {
+    name: "Teacher",
+    to: "/teachers",
+    exact: true,
+  },
+  {
+    name: "Student",
+    to: "/students",
+    exact: true,
+  },
+];
+
+const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
+  return (
+    <Route
+      path={to}
+      exact={activeOnlyWhenExact}
+      children={({ match }) => {
+        var active = match ? "active" : "";
+        return (
+          <li className={active}>
+            <Link className="waves-effect waves-dark" to={to}> <i className="icon-speedometer" /><span className="hide-menu">{label}</span>
+            </Link>
+         </li>
+        );
+      }}
+    ></Route>
+  );
+};
+
 class Menu extends Component {
   render() {
     return (
-      // <div className="Home">
-      //     <div className="Home__table">
-      //         <span> TABLE </span>
-      //     </div>
-      // </div>
       <div>
-        {/* <div className="preloader">
-        <div className="loader">
-          <div className="loader__figure" />
-          <p className="loader__label">Elite admin</p>
-        </div>
-      </div> */}
          <aside className="left-sidebar">
             <div className="scroll-sidebar">
               <nav className="sidebar-nav">
@@ -33,7 +58,6 @@ class Menu extends Component {
                     {" "}
                     <a
                       className="has-arrow waves-effect waves-dark"
-                      href="javascript:void(0)"
                       aria-expanded="false"
                     >
                       <img
@@ -45,47 +69,33 @@ class Menu extends Component {
                     </a>
                     <ul aria-expanded="false" className="collapse">
                       <li>
-                        <a href="javascript:void(0)">
+                        <a>
                           <i className="ti-user" /> My Profile
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">
+                        <a>
                           <i className="ti-wallet" /> My Balance
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">
+                        <a>
                           <i className="ti-email" /> Inbox
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">
+                        <a>
                           <i className="ti-settings" /> Account Setting
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">
+                        <a>
                           <i className="fa fa-power-off" /> Logout
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li className="nav-small-cap">--- PERSONAL</li>
-                  <li>
-                    {" "}
-                    <a className="waves-effect waves-dark" href="index.html">
-                      <i className="icon-speedometer" />
-                      <span className="hide-menu">Dashboard</span>
-                    </a>
-                  </li>
-                  <li>
-                    {" "}
-                    <a className="waves-effect waves-dark" href="index.html">
-                      <i className="icon-speedometer" />
-                      <span className="hide-menu">Teacher</span>
-                    </a>
-                  </li>
+                  {this.showMenus(menus)}
                 </ul>
               </nav>
             </div>
@@ -93,6 +103,19 @@ class Menu extends Component {
       </div>
     );
   }
+
+showMenus = (menus) => {
+  var result = null;
+  if (menus.length > 0) {
+    result = menus.map((menu, index) => {
+     return( <MenuLink key={index}
+       to={menu.to} 
+       label={menu.name}
+       activeOnlyWhenExact={menu.active}></MenuLink>
+     )})
+  }
+  return result;
+};
 }
 
 // export default withRouter(Home);
