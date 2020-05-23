@@ -22,6 +22,7 @@ class App extends Component {
       //   </div>
       // </Router>
 
+      <Router>
     
             <div>
               {/* mobile menu */}
@@ -341,6 +342,7 @@ class App extends Component {
                 <nav>
                   <div className="container">
                     <div className="row">
+                    {/* CATEGORY */}
                       <div className="col-md-3 col-sm-4">
                         <div className="mm-toggle-wrap">
                           <div className="mm-toggle"> <i className="fa fa-align-justify" /> </div>
@@ -528,306 +530,10 @@ class App extends Component {
                           </div>
                         </div>
                       </div>
+                      {/* MENU */}
                       <div className="col-md-9 col-sm-8">
-                        <div className="mtmegamenu">
-                          <ul>
-                            <li className="mt-root demo_custom_link_cms">
-                              <div className="mt-root-item"><a href="index.html">
-                                  <div className="title title_font"><span className="title-text">Trang chủ</span></div>
-                                </a></div>
-                              <ul className="menu-items col-md-3 col-sm-4 col-xs-12">
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="index.html"><span>Home Version 1</span></a></div>
-                                </li>
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="Version2/index.html"><span>Home Version 2</span></a></div>
-                                </li>
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="Version3/index.html"><span>Home Version 3</span></a></div>
-                                </li>
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="Version4/index.html"><span>Home Version 4</span></a></div>
-                                </li>
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="Version5/index.html"><span>Home Version 5</span></a></div>
-                                </li>
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="rtl-version/index.html"><span>RTL Version</span></a></div>
-                                </li>
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="rtl-version1/index.html"><span>Home Version 1 RTL</span></a></div>
-                                </li>
-                              </ul>
-                            </li>
-                            <li className="mt-root">
-                              <div className="mt-root-item"><a href="#">
-                                  <div className="title title_font"><span className="title-text">Khóa học</span></div>
-                                </a></div>
-                              <ul className="menu-items col-xs-12">
-                                <li className="menu-item depth-1 menucol-1-3 ">
-                                  <div className="title title_font"> <a href="#"> Shop Pages </a></div>
-                                  <ul className="submenu">
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="shop_grid.html"> Shop grid </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="shop_grid_right_sidebar.html"> Shop grid right sidebar</a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="shop_list.html"> Shop list </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="shop_list_right_sidebar.html"> Shop list right sidebar</a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="shop_grid_full_width.html"> Shop grid full width </a></div>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li className="menu-item depth-1 menucol-1-3 ">
-                                  <div className="title title_font"> <a href="#"> Ecommerce Pages </a></div>
-                                  <ul className="submenu">
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="wishlist.html"> Wishlists </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="checkout.html"> Checkout </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="compare.html"> Compare </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="shopping_cart.html"> Shopping cart </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="quick_view.html"> Quick View </a></div>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li className="menu-item depth-1 menucol-1-3 ">
-                                  <div className="title title_font"> <a href="#"> Static Pages </a></div>
-                                  <ul className="submenu">
-                                    <li className="menu-item depth-2 category ">
-                                      <div className="title"> <a href="account_page.html"> Create Account Page </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="about_us.html"> About Us </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="contact_us.html"> Contact us </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="404error.html"> Error 404 </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="faq.html"> FAQ </a></div>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li className="menu-item depth-1 menucol-1-3 ">
-                                  <div className="title title_font"> <a href="#"> Product Categories </a></div>
-                                  <ul className="submenu">
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="cat-3-col.html"> 3 Column Sidebar </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="cat-4-col.html"> 4 Column Sidebar</a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="cat-4-col-full.html"> 4 Column Full width </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="cat-6-col.html"> 6 Columns Full width</a></div>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li className="menu-item depth-1 menucol-1-3 ">
-                                  <div className="title title_font"> <a href="#"> Single Product Pages </a></div>
-                                  <ul className="submenu">
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="single_product.html"> single product </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="single_product_left_sidebar.html"> single product left
-                                          sidebar</a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="single_product_right_sidebar.html"> single product right
-                                          sidebar</a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="single_product_magnify_zoom.html"> single product magnify
-                                          zoom</a></div>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li className="menu-item depth-1 menucol-1-3 ">
-                                  <div className="title title_font"> <a href="#"> Blog Pages </a></div>
-                                  <ul className="submenu">
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="blog_right_sidebar.html"> Blog – Right Sidebar </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="blog_left_sidebar.html"> Blog – Left Sidebar </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="blog_full_width.html"> Blog – Full-Width </a></div>
-                                    </li>
-                                    <li className="menu-item">
-                                      <div className="title"> <a href="single_post.html"> Single post </a></div>
-                                    </li>
-                                  </ul>
-                                </li>
-                              </ul>
-                            </li>
-                            <li className="mt-root">
-                              <div className="mt-root-item"><a href="shop_grid.html">
-                                  <div className="title title_font"><span className="title-text">Liên hệ</span> </div>
-                                </a></div>
-                            </li>
-                            <li className="mt-root">
-                              <div className="mt-root-item"><a href="about_us.html">
-                                  <div className="title title_font"><span className="title-text">Về MIELTS</span></div>
-                                </a></div>
-                            </li>
-                            <li className="mt-root demo_custom_link_cms">
-                              <div className="mt-root-item"><a href="blog.html">
-                                  <div className="title title_font"><span className="title-text">Blog</span></div>
-                                </a></div>
-                              <ul className="menu-items col-md-3 col-sm-4 col-xs-12">
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="blog_right_sidebar.html"> Blog – Right Sidebar </a></div>
-                                </li>
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="blog_left_sidebar.html"> Blog – Left Sidebar </a></div>
-                                </li>
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="blog_full_width.html"> Blog – Full-Width </a></div>
-                                </li>
-                                <li className="menu-item depth-1">
-                                  <div className="title"> <a href="single_post.html"> Single post </a></div>
-                                </li>
-                              </ul>
-                            </li>
-                            <li className="mt-root">
-                              <div className="mt-root-item">
-                                <div className="title title_font"><span className="title-text">Bạn đọc gần đây</span></div>
-                              </div>
-                              <ul className="menu-items col-xs-12">
-                                <li className="menu-item depth-1 product menucol-1-3 withimage">
-                                  <div className="product-item">
-                                    <div className="item-inner">
-                                      <div className="product-thumbnail">
-                                        <div className="icon-sale-label sale-left">Sale</div>
-                                        <div className="pr-img-area"> <a title="Ipsums Dolors Untra" href="single_product.html">
-                                            <figure> <img className="first-img" src="images/products/img06.jpg" alt="html template" />
-                                              <img className="hover-img" src="images/products/img06.jpg" alt="html template" /></figure>
-                                          </a>
-                                          <button type="button" className="add-to-cart-mt"> <i className="fa fa-shopping-cart" /><span>
-                                              Add to Cart</span> </button>
-                                        </div>
-                                        <div className="pr-info-area">
-                                          <div className="pr-button">
-                                            <div className="mt-button add_to_wishlist"> <a href="wishlist.html"> <i className="fa fa-heart" /> </a> </div>
-                                            <div className="mt-button add_to_compare"> <a href="compare.html"> <i className="fa fa-signal" /> </a> </div>
-                                            <div className="mt-button quick-view"> <a href="quick_view.html"> <i className="fa fa-search" /> </a> </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="item-info">
-                                        <div className="info-inner">
-                                          <div className="item-title"> <a title="Ipsums Dolors Untra" href="single_product.html">Ipsums
-                                              Dolors Untra </a> </div>
-                                          <div className="item-content">
-                                            <div className="rating"> <i className="fa fa-star-o" /> <i className="fa fa-star-o" /> <i className="fa fa-star-o" /> <i className="fa fa-star-o" /> <i className="fa fa-star-o" />
-                                            </div>
-                                            <div className="item-price">
-                                              <div className="price-box"> <span className="regular-price"> <span className="price">$125.00</span> </span> </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                                <li className="menu-item depth-1 product menucol-1-3 withimage">
-                                  <div className="product-item">
-                                    <div className="item-inner">
-                                      <div className="product-thumbnail">
-                                        <div className="icon-sale-label sale-left">Sale</div>
-                                        <div className="pr-img-area"> <a title="Ipsums Dolors Untra" href="single_product.html">
-                                            <figure> <img className="first-img" src="images/products/img02.jpg" alt="html template" />
-                                              <img className="hover-img" src="images/products/img02.jpg" alt="html template" /></figure>
-                                          </a>
-                                          <button type="button" className="add-to-cart-mt"> <i className="fa fa-shopping-cart" /><span>
-                                              Add to Cart</span> </button>
-                                        </div>
-                                        <div className="pr-info-area">
-                                          <div className="pr-button">
-                                            <div className="mt-button add_to_wishlist"> <a href="wishlist.html"> <i className="fa fa-heart" /> </a> </div>
-                                            <div className="mt-button add_to_compare"> <a href="compare.html"> <i className="fa fa-signal" /> </a> </div>
-                                            <div className="mt-button quick-view"> <a href="quick_view.html"> <i className="fa fa-search" /> </a> </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="item-info">
-                                        <div className="info-inner">
-                                          <div className="item-title"> <a title="Ipsums Dolors Untra" href="single_product.html">Ipsums
-                                              Dolors Untra </a> </div>
-                                          <div className="item-content">
-                                            <div className="rating"> <i className="fa fa-star-o" /> <i className="fa fa-star-o" /> <i className="fa fa-star-o" /> <i className="fa fa-star-o" /> <i className="fa fa-star-o" />
-                                            </div>
-                                            <div className="item-price">
-                                              <div className="price-box"> <span className="regular-price"> <span className="price">$125.00</span> </span> </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                                <li className="menu-item depth-1 product menucol-1-3 withimage">
-                                  <div className="product-item">
-                                    <div className="item-inner">
-                                      <div className="icon-sale-label sale-left">Sale</div>
-                                      <div className="icon-new-label new-right">New</div>
-                                      <div className="product-thumbnail">
-                                        <div className="icon-sale-label sale-left">Sale</div>
-                                        <div className="pr-img-area"> <a title="Ipsums Dolors Untra" href="single_product.html">
-                                            <figure> <img className="first-img" src="images/products/img03.jpg" alt="html template" />
-                                              <img className="hover-img" src="images/products/img03.jpg" alt="html template" /></figure>
-                                          </a>
-                                          <button type="button" className="add-to-cart-mt"> <i className="fa fa-shopping-cart" /><span>
-                                              Add to Cart</span> </button>
-                                        </div>
-                                        <div className="pr-info-area">
-                                          <div className="pr-button">
-                                            <div className="mt-button add_to_wishlist"> <a href="wishlist.html"> <i className="fa fa-heart" /> </a> </div>
-                                            <div className="mt-button add_to_compare"> <a href="compare.html"> <i className="fa fa-signal" /> </a> </div>
-                                            <div className="mt-button quick-view"> <a href="quick_view.html"> <i className="fa fa-search" /> </a> </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div className="item-info">
-                                        <div className="info-inner">
-                                          <div className="item-title"> <a title="Ipsums Dolors Untra" href="single_product.html">Ipsums
-                                              Dolors Untra </a> </div>
-                                          <div className="item-content">
-                                            <div className="rating"> <i className="fa fa-star-o" /> <i className="fa fa-star-o" /> <i className="fa fa-star-o" /> <i className="fa fa-star-o" /> <i className="fa fa-star-o" />
-                                            </div>
-                                            <div className="item-price">
-                                              <div className="price-box"> <span className="regular-price"> <span className="price">$125.00</span> </span> </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
+                      <Menu />
+                      
                       </div>
                     </div>
                   </div>
@@ -1570,7 +1276,7 @@ class App extends Component {
                 {/*End of Newsletter Popup*/}
               </div>
             </div>
-   
+    </Router>
       
     );
   }
