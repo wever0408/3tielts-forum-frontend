@@ -140,7 +140,9 @@ class Menu extends Component {
         var result = null;
         if (menus.length > 0) {
             result = menus.map((menu, index) => {
-                return (
+                
+              
+              return (
                     <MenuLink
                         key={index}
                         label={menu.name}

@@ -11,16 +11,35 @@ import { actFetchProductsRequest, actDeleteProductRequest } from '../../redux/ac
 class Categories extends Component {
 
 
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         products: []
-    //     }
-    // }
+    constructor(props) {
+        super(props);
+        this.state = {
+            categories: [{
+                cap1: {
+                    id: 1,
+                    cate_name: "Camera",
+                    icon: "computer"
+                },
+                cap2: [{ id: 1, cate_name: "Camera" },
+                { id: 1, cate_name: "Camera" }]
+            },
+            {
+                cap1: {
+                    id: 1,
+                    cate_name: "Computer",
+                    icon: "computer"
+                },
+                cap2: [{ id: 1, cate_name: "Camera" },
+                { id: 1, cate_name: "Camera" }]
+            }
+            ]
+        }
+    }
 
     componentDidMount() {
         // Gọi trước khi component đc render lần đầu tiên
-        this.props.fetchAllProducts();
+        // this.props.fetchAllProducts();
+        
         // callApi('products', 'GET', null).then(res => {
         //     console.log(res);
         //     this.setState({
@@ -31,36 +50,63 @@ class Categories extends Component {
 
 
     render() {
-        // var { products } = this.state;
-         var { products } = this.props;
+        var { categories } = this.state;
+        //  var { products } = this.props;
         //var products = [];
 
 
         return (
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <Link to="/product/add" className="btn btn-primary mb-5">
-                    <i className="glyphicon glyphicon-plus"></i> Thêm Sản Phẩm
-                        </Link>
-
-                <ProductList>
-                    {this.showProducts(products)}
-                </ProductList>
-
-
+            <div className="mega-container visible-lg visible-md visible-sm">
+            <div className="navleft-container">
+              <div className="mega-menu-title">
+                <h3>DANH MỤC TÀI LIỆU</h3>
+              </div>
+              <div className="mega-menu-category">
+                <ul className="nav">
+                  {this.showCategories(categories)}             
+                                   </ul>
+              </div>
             </div>
+          </div>
         );
     }
-    showProducts(products) {
+
+   showCategories2 = (cats) => {
+    var result = null;
+    if (cats.length > 0) {
+        result = cats.map((cat,index) => {
+           return ( <div>
+            <li key={index}><a href="shop_grid.html"><span>Envent Stereo</span></a></li>
+            </div>)
+        })
+        return result
+    }
+   }
+
+    showCategories = (categories) => {
         var result = null;
-        var { onDeleteProduct } = this.props;
-        if (products.length > 0) {
-            result = products.map((product, index) => {
-                return <ProductItem
-                    product={product}
-                    key={index}
-                    index={index}
-                    onDeleteProduct={onDeleteProduct}
-                />
+        if (categories.length > 0) {
+            result = categories.map((category, index) => {
+                if(category.cap2)
+                {
+                   return ( <li key={index}> <a href="shop_grid.html"><i className="icon fa fa-headphones fa-fw" /> Headphones</a>
+                              <div className="wrap-popup column1">
+                                <div className="popup">
+                                  <ul className="nav">
+                               
+                                {this.showCategories2(category.cap2)}
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                   )
+                }
+                else{
+                return (
+                    <li> <a href="shop_grid.html"><i className="icon fa fa-headphones fa-fw" /> Headphones</a>
+                  </li>
+                )
+                }
             });
         }
         return result;
@@ -69,24 +115,24 @@ class Categories extends Component {
 }
 
 
-const mapStateToProps = state => {
-    return {
-        products: state.products
-    }
-}
+// const mapStateToProps = state => {
+//     return {
+//         products: state.products
+//     }
+// }
 
-const mapDispatchToProps = (dispatch, props) => {
-    return {
-        fetchAllProducts: () => {
-            dispatch(actFetchProductsRequest());
-        },
-        onDeleteProduct: (id) => {
-            dispatch(actDeleteProductRequest(id));
-        }
-    }
-}
+// const mapDispatchToProps = (dispatch, props) => {
+//     return {
+//         fetchAllProducts: () => {
+//             dispatch(actFetchProductsRequest());
+//         },
+//         onDeleteProduct: (id) => {
+//             dispatch(actDeleteProductRequest(id));
+//         }
+//     }
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps
-)(Categories);
+// export default connect(mapStateToProps, mapDispatchToProps
+// )(Categories);
 
-// export default Categories;
+export default Categories;
