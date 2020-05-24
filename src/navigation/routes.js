@@ -1,6 +1,7 @@
 import React from 'react';
 import HomePage from './../components/HomePage/HomePage';
 import NotFound from './../components/NotFound/NotFound';
+import ArticlePage from './../components/ArticlePage/ArticlePage';
 import ProductListPage from './../components/ProductListPage/ProductListPage';
 import ProductActionPage from './../components/ProductActionPage/ProductActionPage';
 
@@ -26,6 +27,12 @@ const routes = [
         path: '/product/:id/edit',
         exact: false,
         main: ({ match, history }) => <ProductActionPage match={match} history={history} />
+    },
+
+    {
+        path: '/article',
+        exact: false,
+        main: () => <ArticlePage />
     },
     //muốhn lấy :id thì cần match
     
