@@ -2,8 +2,8 @@ import React from 'react';
 import HomePage from './../components/HomePage/HomePage';
 import NotFound from './../components/NotFound/NotFound';
 import ArticlePage from './../components/ArticlePage/ArticlePage';
-import ProductListPage from './../components/ProductListPage/ProductListPage';
-import ProductActionPage from './../components/ProductActionPage/ProductActionPage';
+import ForumPage from './../components/ForumPage/ForumPage';
+import GridPage from './../components/GridPage/GridPage';
 
 const routes = [
     {
@@ -11,22 +11,11 @@ const routes = [
         exact: true,
         main: () => <HomePage />
     },
-    {
-        path: '/product-list',
-        exact: false,
-        main: () => <ProductListPage />
-    },
-    {
-        path: '/product/add',
-        exact: false,
-        main: ({ location, history }) => <ProductActionPage location={location} history={history} />
-    },
-    
 
     {
-        path: '/product/:id/edit',
-        exact: false,
-        main: ({ match, history }) => <ProductActionPage match={match} history={history} />
+        path: '/grid',
+        exact: true,
+        main: () => <GridPage />
     },
 
     {
@@ -34,8 +23,12 @@ const routes = [
         exact: false,
         main: () => <ArticlePage />
     },
-    //muốhn lấy :id thì cần match
-    
+   
+    {
+        path: '/forum',
+        exact: false,
+        main: () => <ForumPage />
+    },
     {
         path: '',
         exact: false,

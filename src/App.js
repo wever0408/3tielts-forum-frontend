@@ -9,22 +9,7 @@ import routes from './navigation/routes';
 class App extends Component {
   render() {
     return (
-      // <Router>
-      //   <div>
-      //     <Menu />
-
-      //     <div className="container">
-      //       <div className="row">
-
-      //         {this.showContentMenus(routes)}
-      //       </div>
-      //     </div>
-
-      //   </div>
-      // </Router>
-
       <Router>
-
         <div>
           {/* mobile menu */}
           <div id="mobile-menu">
@@ -232,6 +217,7 @@ class App extends Component {
             </ul>
           </div>
           {/* end mobile menu */}
+
           <div id="page">
             {/* Header */}
             <header>
@@ -349,7 +335,7 @@ class App extends Component {
                       <div className="mm-toggle"> <i className="fa fa-align-justify" /> </div>
                       <span className="mm-label">Categories</span>
                     </div>
-                   <Categories/>
+                    <Categories />
                   </div>
 
                   {/* MENU */}
@@ -364,6 +350,7 @@ class App extends Component {
             {/* Main Container */}
             {this.showContentMenus(routes)}
             {/* Main Container End */}
+
             {/* Footer */}
             <footer>
               <div className="footer-newsletter">

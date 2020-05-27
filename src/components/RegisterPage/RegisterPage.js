@@ -1,33 +1,62 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
+
 class HomePage extends Component {
-
-  // componentDidMount() {
-  //     $(document).ready(function () {
-  //       $('.tp-banner').revolution(
-  //         {
-  //           delay: 9000,
-  //           startwidth: 1170,
-  //           startheight: 530,
-  //           hideThumbs: 10,
-  
-  //           navigationType: "bullet",
-  //           navigationStyle: "preview1",
-  
-  //           hideArrowsOnMobile: "on",
-  
-  //           touchenabled: "on",
-  //           onHoverStop: "on",
-  //           spinner: "spinner4"
-  //         });
-  //     });
- 
-  // }
-
     render() {
         return (
             <div id="page">
-       
+         {/* Home Slider Start */}
+      <div className="slider">
+        <div className="tp-banner-container clearfix">
+          <div className="tp-banner">
+            <ul>
+              {/* SLIDE 1 */}
+              <li data-transition="slidehorizontal" data-slotamount={5} data-masterspeed={700}>
+                {/* MAIN IMAGE */}
+                <img src="images/slider/slider-img1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" />
+                {/* LAYERS */}
+                {/* LAYER NR. 1 */}
+                <div className="tp-caption very_big_white skewfromrightshort fadeout" data-x="center" data-y={100} data-speed={500} data-start={1200} data-easing="Circ.easeInOut" style={{fontSize: '70px', fontWeight: 800, color: '#fe0100'}}>Huge <span style={{color: '#000'}}>sale</span>
+                </div>
+                {/* LAYER NR. 2 */}
+                <div className="tp-caption tp-caption medium_text skewfromrightshort fadeout" data-x="center" data-y={165} data-hoffset={0} data-voffset={-73} data-speed={500} data-start={1200} data-easing="Power4.easeOut" style={{fontSize: '20px', fontWeight: 500, color: '#337ab7'}}> Sale off 75% all products </div>
+                {/* LAYER NR. 3 */}
+                <div className="tp-caption customin tp-resizeme rs-parallaxlevel-0" data-x="center" data-y={210} data-hoffset={0} data-voffset={98} data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed={500} data-start={1500} data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-linktoslide="next" style={{border: '2px solid #fed700', borderRadius: '50px', fontSize: '14px', backgroundColor: '#fed700', color: '#333', zIndex: 12, whiteSpace: 'nowrap', letterSpacing: '1px'}}>
+                  <a href="#" className="largebtn slide1">Learn More</a> </div>
+              </li>
+              {/* SLIDE 2 */}
+              <li data-transition="slidehorizontal" data-slotamount={5} data-masterspeed={700}>
+                {/* MAIN IMAGE */}
+                <img src="images/slider/slider-img2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" />
+                {/* LAYERS */}
+                {/* LAYER NR. 1 */}
+                <div className="tp-caption white_heavy_60 customin ltl tp-resizeme" data-x={310} data-y={140} data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed={1200} data-start={700} data-easing="Power4.easeOut" data-splitin="chars" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed={1000} data-endeasing="Power4.easeIn" style={{fontSize: '70px', fontWeight: 800, color: '#333'}}>GREAT LOOKS </div>
+                {/* LAYER NR. 2 */}
+                <div className="tp-caption black_thin_blackbg_30 customin ltl tp-resizeme" data-x={310} data-y={220} data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed={1500} data-start={1000} data-easing="Power4.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed={1000} data-endeasing="Power4.easeIn" style={{zIndex: 3, whiteSpace: 'nowrap', color: '#34bcec', fontSize: '20px', fontWeight: 500}}>The perfect
+                  synthesis of innovative thinking </div>
+                {/* LAYER NR. 4 */}
+                <div className="tp-caption lfb ltb start tp-resizeme" data-x={310} data-y={270} data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed={1500} data-start={1600} data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-linktoslide="next" style={{zIndex: 12, whiteSpace: 'nowrap'}}><a href="#" className="largebtn solid">Get It Now!</a> </div>
+              </li>
+              {/* SLIDE 3 */}
+              <li data-transition="slidehorizontal" data-slotamount={5} data-masterspeed={700}>
+                {/* MAIN IMAGE */}
+                <img src="images/slider/slider-img3.jpg" alt="slidebg3" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" />
+                {/* LAYERS */}
+                {/* LAYER NR. 1 */}
+                <div className="tp-caption big_100_white lft start fadeout" data-x={310} data-y={120} data-speed={500} data-start={1200} data-easing="Circ.easeInOut" style={{fontSize: '70px', fontWeight: 800, color: '#fff'}}>
+                  High</div>
+                <div className="tp-caption big_100_white lft fadeout" data-x={310} data-y={180} data-speed={500} data-start={1200} data-easing="Circ.easeInOut" style={{fontSize: '50px', fontWeight: 800, color: '#fed700'}}>
+                  Definition</div>
+                {/* LAYER NR. 2 */}
+                <div className="tp-caption tp-caption medium_text lfb fadeout" data-x={310} data-y={260} data-speed={500} data-start={1200} data-easing="Power4.easeOut" style={{zIndex: 3, whiteSpace: 'nowrap', color: '#34bcec', fontSize: '20px', fontWeight: 500}}>Best Camera For
+                  You?</div>
+                {/* LAYER NR. 3 */}
+                <div className="tp-caption fade fadeout tp-resizeme" data-x={310} data-y={320} data-hoffset={-100} data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" data-speed={1500} data-start={800} data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-linktoslide="next" style={{zIndex: 12, whiteSpace: 'nowrap'}}><a href="#" className="largebtn solid">Get It Now!</a> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        
         {/*special-products*/}
         <div className="container">
           <div className="special-products">
@@ -399,316 +428,6 @@ class HomePage extends Component {
           </div>
         </div>
        <br></br>
-{/* Main Container */}
-<div className="main-container col1-layout">
-        <div className="container">
-          <div className="row">
-            <div className="col-main">
-            </div>
-            <div className="product-overview-tab">
-              <div className="container">
-                <div className="row">
-                  <div className="col-xs-12">
-                    <div className="product-tab-inner">
-                      <ul id="product-detail-tab" className="nav nav-tabs product-tabs">
-                        <li className="active"> <a href="#description" data-toggle="tab"> Câu hỏi </a> </li>
-                        <li> <a href="#reviews" data-toggle="tab">Top câu hỏi</a> </li>
-                        <li><a href="#product_tags" data-toggle="tab">Cá nhân</a></li>
-                        <li> <a href="#custom_tabs" data-toggle="tab">Xếp hạng</a> </li>
-                      </ul>
-                      <div id="productTabContent" className="tab-content">
-                        <div className="tab-pane fade in active" id="description">
-                          <div className="std">
-                            <div className="box-collateral box-tags">
-                              <div className="tags">
-                                <form id="addTagForm" action="#" method="get">
-                                  <div className="form-add-tags">
-                                    <div className="input-box"><label htmlFor="productTagName">Tìm câu hỏi:</label>
-                                      <input className="input-text" name="productTagName" id="productTagName" type="text" />
-                                      <button type="button" title="Add Tags" className="button add-tags"><i className="fa fa-search" aria-hidden="true" /> </button>
-                                    </div>
-                                    {/*input-box*/}
-                                  </div>
-                                </form>
-                              </div>
-                              {/* tìm thông tin */}
-                              {/*tags*/}
-                              <p className="note">Use spaces to separate tags. Use single quotes (') for phrases.</p>
-                            </div>
-                            <div className="block popular-tags-area ">
-                              <div className="sidebar-bar-title">
-                                <h3>Popular Tags</h3>
-                              </div>
-                              <div className="tag">
-                                <ul>
-                                  <li><a href="#">Boys</a></li>
-                                  <li><a href="#">Camera</a></li>
-                                  <li><a href="#">good</a></li>
-                                  <li><a href="#">Computers</a></li>
-                                  <li><a href="#">Phone</a></li>
-                                  <li><a href="#">clothes</a></li>
-                                  <li><a href="#">girl</a></li>
-                                  <li><a href="#">shoes</a></li>
-                                  <li><a href="#">women</a></li>
-                                  <li><a href="#">accessoties</a></li>
-                                  <li><a href="#">View All Tags</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                            {/* Comment */}
-                            <div className="single-box">
-                              <h2 className>Comments</h2>
-                              <div className="comment-list">
-                                <ul>
-                                  <div className="my-comment">
-                                    <li>
-                                      <div className="avartar"> <img src="images/avatar.png" alt="Avatar" />
-                                        Admin
-                                      </div>
-                                      <div className="comment-body">
-                                        <div className="comment-meta"> <span className="author"><a href="#">TIÊU ĐỀ</a></span> <span className="date">2015-04-01</span> </div>
-                                        <div className="comment"> Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac
-                                          turpis. Integer
-                                          rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget,
-                                          malesuada at, neque.
-                                        </div>
-                                        <div className="comment_like"><a href="#">Thích</a><span aria-hidden="true"> · </span>
-                                          <a className="respone" href="javascript:;">Phản hồi</a><span aria-hidden="true"> ·
-                                          </span>
-                                          <span><i className="fas fa-thumbs-up" />&nbsp; 1</span> <span aria-hidden="true">
-                                            · </span>
-                                          <span className="comment-count"> <a href="javascript:;"> <i className="fa fa-comment-o" aria-hidden="true">&nbsp;</i> 5 </a></span>
-                                        </div>
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <ul className="my-sub-comment-group">
-                                        <li>
-                                          <div className="avartar"> <img src="images/avatar.png" alt="Avatar" /> </div>
-                                          <div className="comment-body">
-                                            <div className="comment-meta"> <span className="author"><a href="#">Admin</a></span>
-                                              <span className="date">2015-04-01</span> </div>
-                                            <div className="comment"> Aenean auctor wisi et urna. Aliquam erat volutpat. Duis
-                                              ac turpis. Integer
-                                              rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget,
-                                              malesuada at, neque.
-                                            </div>
-                                            <div className="comment_like"><a href="#">Thích</a><span aria-hidden="true"> ·
-                                              </span><a className="respone" href="javascript:;">Phản hồi</a><span aria-hidden="true"> ·
-                                              </span><span><i className="fas fa-thumbs-up" />&nbsp; 1</span>
-                                            </div>
-                                          </div>
-                                        </li>
-                                        <li className="my-sub-comment">
-                                          <div className="avartar">
-                                            <img src="images/avatar.png" alt="Avatar" />
-                                          </div>
-                                          <div className="comment-body">
-                                            <div className="my-comment-form">
-                                              <textarea name="message" id="message" rows={8} className="form-control" defaultValue={""} />
-                                              <button className="button">
-                                                <span>Post Comment</span></button>
-                                              <button className="button cancel"><span>Hủy</span>
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </li>
-                                      </ul>
-                                    </li>
-                                  </div>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div id="reviews" className="tab-pane fade">
-                          <div className="single-box comment-box">
-                            <h2>ĐẶT CÂU HỎI?</h2>
-                            <div className="coment-form">
-                              <p>Make sure you enter the () required information where indicated. HTML code is not allowed.</p>
-                              <div className="row">
-                                <div className="col-sm-12">
-                                  <label htmlFor="website">Tiêu đề</label>
-                                  <input id="website" type="text" className="form-control" />
-                                </div>
-                                <div className="col-sm-6">
-                                  <label htmlFor="name">Loại</label>
-                                  <select className="input form-control" name="name">
-                                    <option selected="true" disabled="disabled">Chọn </option>
-                                    <option value={1}>Apple Watch</option>
-                                    <option value={6}>&nbsp;&nbsp;&nbsp;AP1 </option>
-                                    <option value={7}>&nbsp;&nbsp;&nbsp;AP2 </option>
-                                    <option value={2}>Phụ kiện</option>
-                                    <option value={8}>&nbsp;&nbsp;&nbsp;PK1 </option>
-                                    <option value={9}>&nbsp;&nbsp;&nbsp;PK2 </option>
-                                    <option value={10}>&nbsp;&nbsp;&nbsp;PK3 </option>
-                                    <option value={3}>iPhone</option>
-                                    <option value={4}>iPad Pro</option>
-                                    <option value={5}>Macbook Pro Retina</option>
-                                    <option value={11}>Xiaomi</option>
-                                    <option value={13}>&nbsp;&nbsp;&nbsp;Điện thoại </option>
-                                    <option value={17}>&nbsp;&nbsp;&nbsp;Xiaomi khác </option>
-                                  </select>
-                                </div>
-                                <div className="col-sm-12">
-                                  <label htmlFor="message">Message</label>
-                                  <textarea name="message" id="message" rows={8} className="form-control" defaultValue={""} />
-                                </div>
-                              </div>
-                              <button className="button"><span>Post Comment</span></button>
-                            </div>
-                          </div>
-                          <div className="single-box">
-                            <h2 className>Comments</h2>
-                            <div className="comment-list">
-                              <ul>
-                                <div className="my-comment">
-                                  <li>
-                                    <div className="avartar"> <img src="images/avatar.png" alt="Avatar" /> </div>
-                                    <div className="comment-body">
-                                      <div className="comment-meta"> <span className="author"><a href="#">Admin</a></span> <span className="date">2015-04-01</span> </div>
-                                      <div className="comment"> Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac
-                                        turpis. Integer
-                                        rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget,
-                                        malesuada at, neque.
-                                      </div>
-                                      <div className="comment_like"><a href="#">Thích</a><span aria-hidden="true"> · </span>
-                                        <a className="respone" href="javascript:;">Phản hồi</a><span aria-hidden="true"> ·
-                                        </span>
-                                        <span><i className="fas fa-thumbs-up" aria-hidden="true" />&nbsp; 1</span> <span aria-hidden="true">
-                                          · </span>
-                                        <span className="comment-count"> <a href="javascript:;"> <i className="fa fa-comment-o" aria-hidden="true">&nbsp;</i> 5 </a></span>
-                                      </div>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <ul className="my-sub-comment-group" style={{display: 'none'}}>
-                                      <li>
-                                        <div className="avartar"> <img src="images/avatar.png" alt="Avatar" /> </div>
-                                        <div className="comment-body">
-                                          <div className="comment-meta"> <span className="author"><a href="#">Admin</a></span>
-                                            <span className="date">2015-04-01</span> </div>
-                                          <div className="comment"> Aenean auctor wisi et urna. Aliquam erat volutpat. Duis
-                                            ac turpis. Integer
-                                            rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget,
-                                            malesuada at, neque.
-                                          </div>
-                                          <div className="comment_like"><a href="#">Thích</a><span aria-hidden="true"> ·
-                                            </span><a className="respone" href="javascript:;">Phản hồi</a><span aria-hidden="true"> ·
-                                            </span><span><i className="fas fa-thumbs-up" aria-hidden="true" />&nbsp; 1</span>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li className="my-sub-comment">
-                                        <div className="avartar">
-                                          <img src="images/avatar.png" alt="Avatar" />
-                                        </div>
-                                        <div className="comment-body">
-                                          <div className="my-comment-form">
-                                            <textarea name="message" id="message" rows={8} className="form-control" defaultValue={""} />
-                                            <button className="button">
-                                              <span>Post Comment</span></button>
-                                            <button className="button cancel"><span>Hủy</span>
-                                            </button>
-                                          </div>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                </div>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="tab-pane fade" id="product_tags">
-                          <div className="single-box">
-                            <h2 className>Comments</h2>
-                            <div className="comment-list">
-                              <ul>
-                                <div className="my-comment">
-                                  <li>
-                                    <div className="avartar"> <img src="images/avatar.png" alt="Avatar" /> </div>
-                                    <div className="comment-body">
-                                      <div className="comment-meta"> <span className="author"><a href="#">Admin</a></span> <span className="date">2015-04-01</span> </div>
-                                      <div className="comment"> Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac
-                                        turpis. Integer
-                                        rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget,
-                                        malesuada at, neque.
-                                      </div>
-                                      <div className="comment_like"><a href="#">Thích</a><span aria-hidden="true"> · </span>
-                                        <a className="respone" href="javascript:;">Phản hồi</a><span aria-hidden="true"> ·
-                                        </span>
-                                        <span><i className="fas fa-thumbs-up" aria-hidden="true" />&nbsp; 1</span> <span aria-hidden="true">
-                                          · </span>
-                                        <span className="comment-count"> <a href="javascript:;"> <i className="fa fa-comment-o" aria-hidden="true">&nbsp;</i> 5 </a></span>
-                                      </div>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <ul className="my-sub-comment-group" style={{display: 'none'}}>
-                                      <li>
-                                        <div className="avartar"> <img src="images/avatar.png" alt="Avatar" /> </div>
-                                        <div className="comment-body">
-                                          <div className="comment-meta"> <span className="author"><a href="#">Admin</a></span>
-                                            <span className="date">2015-04-01</span> </div>
-                                          <div className="comment"> Aenean auctor wisi et urna. Aliquam erat volutpat. Duis
-                                            ac turpis. Integer
-                                            rutrum ante eu lacus. Vestibulum libero nisl, porta vel, scelerisque eget,
-                                            malesuada at, neque.
-                                          </div>
-                                          <div className="comment_like"><a href="#">Thích</a><span aria-hidden="true"> ·
-                                            </span><a className="respone" href="javascript:;">Phản hồi</a><span aria-hidden="true"> ·
-                                            </span><span><i className="fas fa-thumbs-up" aria-hidden="true" />&nbsp; 1</span>
-                                          </div>
-                                        </div>
-                                      </li>
-                                      <li className="my-sub-comment">
-                                        <div className="avartar">
-                                          <img src="images/avatar.png" alt="Avatar" />
-                                        </div>
-                                        <div className="comment-body">
-                                          <div className="my-comment-form">
-                                            <textarea name="message" id="message" rows={8} className="form-control" defaultValue={""} />
-                                            <button className="button">
-                                              <span>Post Comment</span></button>
-                                            <button className="button cancel"><span>Hủy</span>
-                                            </button>
-                                          </div>
-                                        </div>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                </div>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="tab-pane fade" id="custom_tabs">
-                          <div className="product-tabs-content-inner clearfix">
-                            <p><strong>Lorem Ipsum</strong><span>&nbsp;is
-                                simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500s, when
-                                an unknown printer took a galley of type and scrambled it to make a type
-                                specimen book. It has survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged. It
-                                was popularised in the 1960s with the release of Letraset sheets
-                                containing Lorem Ipsum passages, and more recently with desktop
-                                publishing software like Aldus PageMaker including versions of Lorem
-                                Ipsum.</span></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Main Container End */}
-
-       
       </div>
         );
     }
