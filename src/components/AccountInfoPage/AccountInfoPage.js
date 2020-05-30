@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import {  NavLink } from 'react-router-dom';
 import './AccountInfoPage.css';
 
 class AccountInfoPage extends Component {
@@ -97,6 +98,7 @@ class AccountInfoPage extends Component {
                   <ul>
                     <li className="current"><a>Thông tin tài khoản</a></li>
                     <li><a href="bidder-wishlist.html">Danh sách yêu thích</a></li>
+                    
                     <li><a href="bidder-biddings.html">Các bài kiểm tra thử </a></li>
                     <li><a href="bidder-won.html"> Câu hỏi trong forum</a></li>
                     <li className="last"><a href="bidder-evaluate.html">Nâng cấp học viên</a></li>
@@ -104,6 +106,7 @@ class AccountInfoPage extends Component {
                 </div>
               </div>
             </aside>
+          
           </div>
         </div>
       </section>

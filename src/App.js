@@ -233,7 +233,7 @@ class App extends Component {
                       {/* top links */}
                       <div className="headerlinkmenu col-lg-8 col-md-7 col-sm-8 col-xs-12">
                         <div className="links">
-                          <div className="myaccount"><a title="My Account" href="/account"><i className="fa fa-user" /><span className="hidden-xs">My Account</span></a></div>
+                          <div className="myaccount"><a title="My Account" href="/account/info"><i className="fa fa-user" /><span className="hidden-xs">My Account</span></a></div>
                           <NavLink to="/about">About</NavLink>
                           <div className="wishlist"><a title="My Wishlist" href="wishlist.html"><i className="fa fa-heart" /><span className="hidden-xs">Wishlist</span></a></div>
                          
@@ -264,7 +264,8 @@ class App extends Component {
                   <div className="row">
                     <div className="col-sm-3 col-md-3 col-xs-12">
                       {/* Header Logo */}
-                      <div className="logo"><a title="e-commerce" href="index.html"><img alt="responsive theme logo" src="images/logo.png" /></a> </div>
+                      <div className="logo"><a title="e-commerce" href="index.html">
+                      <img alt="responsive theme logo" src="images/logo.png" /></a> </div>
                       {/* End Header Logo */}
                     </div>
                     <div className="col-xs-9 col-sm-6 col-md-6">
