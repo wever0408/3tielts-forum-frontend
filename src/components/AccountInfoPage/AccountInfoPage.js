@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import './AccountInfoPage.css';
 
-class HomePage extends Component {
+class AccountInfoPage extends Component {
     render() {
         return (
-
           <div>
              {/* Main Container */}
       <section className="main-container col2-right-layout">
@@ -114,4 +114,4 @@ class HomePage extends Component {
     }
 }
 
-export default HomePage;
+export default AccountInfoPage;

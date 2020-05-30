@@ -1,0 +1,29 @@
+.page-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox>label {
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+/* .password-group{
+      display: none; */
+/* } */
+
+.box-authentication {
+  width: 550px;
+  margin-left: 70px !important;
+}
+
+.my-login-class .page-content {
+  width: 40%;
+  margin: auto;
+}
+
+label.error {
+  display: inline-block;
+  color: red;
+  width: 200px;
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, NavLink } from 'react-router-dom';
 
 import './App.css';
 import Menu from './common-components/Menu/Menu';
@@ -233,10 +233,11 @@ class App extends Component {
                       {/* top links */}
                       <div className="headerlinkmenu col-lg-8 col-md-7 col-sm-8 col-xs-12">
                         <div className="links">
-                          <div className="myaccount"><a title="My Account" href="account_page.html"><i className="fa fa-user" /><span className="hidden-xs">My Account</span></a></div>
+                          <div className="myaccount"><a title="My Account" href="/account"><i className="fa fa-user" /><span className="hidden-xs">My Account</span></a></div>
+                          <NavLink to="/about">About</NavLink>
                           <div className="wishlist"><a title="My Wishlist" href="wishlist.html"><i className="fa fa-heart" /><span className="hidden-xs">Wishlist</span></a></div>
-                          <div className="blog"><a title="Blog" href="blog.html"><i className="fa fa-rss" /><span className="hidden-xs">Blog</span></a></div>
-                          <div className="login"><a href="account_page.html"><i className="fa fa-unlock-alt" /><span className="hidden-xs">Log In</span></a></div>
+                         
+                          <div className="login"><a href="/login"><i className="fa fa-unlock-alt" /><span className="hidden-xs">Log In</span></a></div>
                         </div>
                         <div className="language-currency-wrapper">
                           <div className="inner-cl">

@@ -1,0 +1,32 @@
+.item-brief {
+  padding-left: 3px;
+
+}
+
+.product-item {
+  /* margin-top: 10px; */
+  /* background-color: rgb(245, 240, 139); */
+  border-style: groove;
+  /* border-color: honeydew; */
+  border-width: 1px;
+}
+
+/* 
+.form-control {
+  width: 200px;
+} */
+
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .form-group {
+  width: fit-content;
+} */
+
+.checkbox>label {
+  font-weight: bold;
+  margin-left: 15px;
+}
